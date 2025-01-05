@@ -21,8 +21,6 @@ public class ReverseLinkedList_206 {
             current.next = reverse;
             reverse = current;
             current = temp;
-
-
         }
 
         return reverse;
