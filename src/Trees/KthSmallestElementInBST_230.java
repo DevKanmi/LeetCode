@@ -1,6 +1,6 @@
 package Trees;
 /*
-Link:
+Link: https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 Difficulty: Medium
 
 Approach: There are 3 approaches
