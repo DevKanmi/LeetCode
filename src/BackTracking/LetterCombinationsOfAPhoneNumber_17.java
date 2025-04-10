@@ -46,7 +46,7 @@ public class LetterCombinationsOfAPhoneNumber_17 {
 
     private void backtrack(int idx, char[] digit, HashMap<Character, String> map, StringBuilder sb) {
         if (idx == digit.length) {
-            comb.add(new StringBuilder(sb).toString());
+            comb.add(sb.toString())); //We can simply just convert sb to string without putting it in new SB constructor
             return;
         }
 
