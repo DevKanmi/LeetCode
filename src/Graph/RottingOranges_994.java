@@ -9,6 +9,19 @@ SC: O(N * M)
 Algo:
 
  */
+
+class Pair {
+    int row;
+    int col;
+    int tm;
+
+    public Pair(int row, int col, int tm) {
+        this.row = row;
+        this.col = col;
+        this.tm = tm;
+    }
+}
+
 public class RottingOranges_994 {
     public int orangesRotting(int[][] grid) {
         int n = grid.length;
