@@ -1,4 +1,5 @@
 package SortingAlgorithms;
+import java.util.*;
 
 /*
 Implementation of Quick Sort Algorithm
@@ -16,7 +17,6 @@ public class quickSort {
     public static void main(String[] args) {
         int[] arr = {2,4,5,6,2,4,2,1,2,3,2,5,6,2,4,6,7,3,6,8,5,3,5,8,2,0,3,0,0,7};
         QuickSort(arr, 0, arr.length - 1);
-
         for(int i: arr){
             System.out.print(i + " ");
         }
@@ -27,6 +27,7 @@ public class quickSort {
             int q = partition(arr, low, high);
             QuickSort(arr, low, q - 1);
             QuickSort(arr, q + 1, high);
+
         }
     }
 
@@ -40,6 +41,8 @@ public class quickSort {
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
+
+
             }
         }
             int t2 = arr[i + 1];
