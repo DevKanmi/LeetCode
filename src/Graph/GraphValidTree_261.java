@@ -39,7 +39,7 @@ class GraphValidTree_261 {
 
         if(edges.length != n -1) return false;
 
-        HashMap<Integer, List<Integer>> map = new HashMap<>();
+        HashMap<Integer, List<Integer>> map = new HashMap<>(); // We could have used a list where the index is the node and neihgbours is the arraylist
         for(int i = 0; i < n; i++) map.put(i, new ArrayList<>());
 
         for(int[] edge : edges){
