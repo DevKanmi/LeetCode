@@ -15,8 +15,8 @@ public class RotateImage_48 {
         int m = matrix.length;
 
         //Transpose the matrix -> Turning each row to column;
-        for(int i = 0; i < m; i++){
-            for(int j = i + 1; j < m; j++){
+        for (int i = 0; i < m; i++) {
+            for (int j = i + 1; j < m; j++) {
                 int temp = matrix[j][i];
                 matrix[j][i] = matrix[i][j];
                 matrix[i][j] = temp;
@@ -26,9 +26,9 @@ public class RotateImage_48 {
         //Reverse the matrix  -> Swap the first and last increase rb and decrease lb(right bound and left bound)
         int rb = 0, lb = m - 1;
 
-        while(rb < lb){
+        while (rb < lb) {
             int i = 0;
-            while(i < m){
+            while (i < m) {
                 int temp = matrix[i][rb];
                 matrix[i][rb] = matrix[i][lb];
                 matrix[i][lb] = temp;
@@ -38,4 +38,5 @@ public class RotateImage_48 {
             rb++;
             lb--;
         }
+    }
 }
